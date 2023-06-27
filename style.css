@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url("https://cdn.pixabay.com/photo/2020/03/25/21/05/pizza-4968645_960_720.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes slidein {
+  from {
+    background-image: url("https://cdn.pixabay.com/photo/2020/03/25/21/05/pizza-4968645_960_720.jpg");
+  }
+
+  to {
+    background-image: url("https://cdn.pixabay.com/photo/2021/07/19/16/04/pizza-6478478_960_720.jpg");
+  }
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+
+  background: rgba(4, 0, 0, 0.479);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+}
+
+.container h1 {
+  color: rgb(255, 255, 255);
+  font-family: 'Bebas Neue', cursive;
+}
+
+.container form input {
+  height: 3em;
+  font-size: 15px;
+}
+
+.container form button {
+  height: 3em;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.container form button:hover {
+  background-color: #6c75edc1;
+  cursor: pointer;
+}
+
+.respuesta {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-family: 'Koulen', cursive;
+}
